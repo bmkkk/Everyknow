@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+.content {
+    padding-top: 0em;
+}
+.login-box{
+	padding:0;
+	min-height: 700px;
+}
+.login-main h1{
+	color: #08080B;
+	font-weight: 700;
+	font-size: 1.2em;
+	padding: 1em 0;
+}
+.login-main{
+	border-top: 1px solid #EEE;
+}
+.login-left{
+	float: right;
+	width: 43%;
+	margin-right: 1.9%;
+	border: 1px solid #EEE;
+	padding: 1em 1.5em;
+}
+.login-right{
+	float: right;
+	width: 43%;
+	margin-right: 0;
+	border: 1px solid #EEE;
+	padding: 1em 1.5em;
+}
+.login-right h3{
+	color:#08080B;
+	text-transform: capitalize;
+	line-height: 1.8em;
+}
+.login-left h3,.login-right h3{
+	color: #08080B;
+	font-weight: 700;
+	font-size: 1em;
+	padding-bottom: 0.5em;
+}
+.login-left p,.login-right p{
+	color: #08080B;
+	display: block;
+	font-size: 0.8em;
+	margin: 0 0 1.5em 0;
+	line-height: 1.8em;
+}
+.login-right p{
+	margin:0;
+}
+.acount-btn{
+	background: #08080B;
+	color: #FFF;
+	font-size: 0.8em;
+	padding: 0.7em 1.2em;
+	border-radius: 5px;
+	border-bottom: 4px solid #08080B;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	text-transform:uppercase;
+}
+.acount-btn:hover{
+	background: #1C1C20;
+	border-bottom: 4px solid #333;
+}
+.login-right form{
+	padding:1em 0; 
+}
+.login-right span{
+	color: #08080B;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding-bottom: 0.2em;
+	display: block;
+	text-transform: uppercase;
+}
+.login-right span label{
+	color: #08080B;
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 0.2em;
+}
+.login-right input[type="text"]{
+	border: 1px solid #EEE;
+	outline-color: #08080B;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.forgot{
+	color: #08080B;
+	font-weight: 700;
+	font-size: 0.875em;
+	margin-bottom: 1em;
+	display: block;
+	text-transform: uppercase;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+}
+.forgot:hover{
+	color:#08080B;
+}
+.login-right form div{
+	padding: 0 0 0.5em 0;
+}
+.login-right input[type="submit"]{
+	background: #08080B;
+	color: #FFF;
+	font-size: 0.8em;
+	padding: 0.7em 1.2em;
+	border-radius: 5px;
+	border-bottom: 4px solid #08080B;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	outline: none;
+	text-transform: uppercase;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+}
+.login-right input[type="submit"]:hover{
+	background: #1C1C20;
+	border-bottom: 4px solid #333;
+}
+.wrap{
+	width:70%;
+	margin:0 auto;
+}
+.clear{clear:both;}
+    </style>
+
+</head>
+<body>
+    <div class="content login-box">
+        <div class="login-main">
+            <div class="wrap">
+                <h1>LOGIN OR CREATE AN ACCOUNT</h1>
+                <div class="login-left">
+                    <h3>NEW CUSTOMERS</h3>
+                    <p>Here you can create your own account</p>
+                    <a class="acount-btn" href="register.html">Creat an Account</a>
+                </div>
+                <div class="login-right">
+                    <h3>REGISTERED CUSTOMERS</h3>
+                    <p>If you have an account with us, please log in.</p>
+                    <form>
+                        <div>
+                            <span>Email Address<label>*</label></span>
+                            <input type="text"> 
+                        </div>
+                        <div>
+                            <span>Password<label>*</label></span>
+                            <input type="text"> 
+                        </div>
+                        <a class="forgot" href="#">Forgot Your Password?</a>
+                        <input type="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
